@@ -1,0 +1,16 @@
+<h1>THIS IS THE EDIT PAGE</h1><br>
+<%= form_for @article do |f| %>
+  <ul>
+     <li>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %>
+     </li>
+     <li>
+  <%= f.label :description %><br>
+  <%= f.text_area :description %>
+     </li>
+     <li>
+  <%= f.submit "Submit Article" %>
+     </li>
+  </ul>
+<% end %>
